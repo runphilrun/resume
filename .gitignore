@@ -1,3 +1,6 @@
+# emacs buffer files
+.#*
+
 # core latex/pdflatex auxiliary files
 *.aux
 *.lof
