@@ -1,5 +1,6 @@
 # emacs buffer files
 .#*
+auto/*
 
 # core latex/pdflatex auxiliary files
 *.aux
