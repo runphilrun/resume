@@ -1,0 +1,63 @@
+# core latex/pdflatex auxiliary files
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+
+# intermediate filesdb_latexmk
+uu
+*.dvi
+*-converted-to.*
+
+# bibliography auxiliary files
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.brf
+*.run.xml
+
+# build auxiliary files
+*.fdb_latexmk
+*.synctex
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+
+# auxiliary and intermediate files from packages
+#algorithms
+*.alg
+*.loa
+#fixme
+*.lox
+#glossaries
+*.acn
+*.acr
+*.glg
+*.glo
+*.gls
+*.glsdefs
+#gnuplottex
+*-gnuplottex-*
+#hyperref
+*.brf
+#nomencl
+*.nlo
+*.nlg
+*.nls
+#pdfcomment
+*.upa
+*.upb
+#pythontex
+*.pytxcode
+pythontex-files-*/
+#todonotes
+*.tdo
