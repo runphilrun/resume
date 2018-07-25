@@ -33,7 +33,7 @@
 \RequirePackage{url}      % insert links
 \RequirePackage[T1]{fontenc} % T1 font encoding
 \RequirePackage{lmodern}  % use Latin Modern Sans Serif
-% \RequirePackage{fontawesome} % high quality web icons
+\RequirePackage{fontawesome} % high quality web icons
 % --------
 
 % ======
@@ -61,9 +61,4 @@
 
 \newcommand{\headerwithlabel}[3]{% bold first item, italic second, right align third
   {\large{\bf #1}, {\it #2}\hfill #3} \\
-}
-
-% SPECIAL
-\newcommand{\degree}[2]{
-  #1 \qquad {\bf GPA: } #2 \\
 }
