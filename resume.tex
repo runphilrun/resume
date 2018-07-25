@@ -1,15 +1,24 @@
 %% RESUME - Philip Linden
 \documentclass{resume}
+
+% --------
+% preamble
+% ========
+\usepackage{multirow}
 \newcolumntype{Y}{>{\centering\arraybackslash}X} % centered and autosized cells in table
+% --------
+
 \begin{document}
 
-\begin{tabularx}{\textwidth}{@{}llYr@{}}
-\faGlobe & \href{https://runphilrun.github.io/}{runphilrun.github.io} & & pjl7651@rit.edu \\
-\faLinkedin & \href{https://www.linkedin.com/in/philiplinden/}{philiplinden} &
-\name{Philip J. Linden} & 440 N Winchester Blvd. Apt 128 \\
-\faAngellist & \href{https://angel.co/philip-linden}{philip-linden} & & Santa Clara, CA 95050 \\
-\faGithub & \href{https://github.com/runphilrun/}{runphilrun} & & (585) 690-7067 \\ 
+{\small
+\begin{tabularx}{\linewidth}{@{}lYr@{}}
+  \faGlobe~\href{https://runphilrun.github.io/}{runphilrun.github.io} & & pjl7651@rit.edu \\
+  \faLinkedin~\href{https://www.linkedin.com/in/philiplinden/}{philiplinden} &
+  \multirow{2}{*}{\name{Philip J. Linden}} & 440 N Winchester Blvd. Apt 128 \\
+  \faAngellist~\href{https://angel.co/philip-linden}{philip-linden} & & Santa Clara, CA 95050 \\
+  \faGithub~\href{https://github.com/runphilrun/}{runphilrun} & & (585) 690-7067
 \end{tabularx}
+}
 
 \section{Professional Summary}
 I am a recent graduate who is passionate about the design and analysis of
@@ -27,7 +36,7 @@ Master of Engineering in Mechanical Engineering (Dual Degree) & {\bf GPA: } 3.3 
 \end{tabular}
 
 \section{Graduate Paper}
-\headerwithlabel{Cosmic Dawn Intensity Mapper System-Level Design}{\small\href{https://github.com/runphilrun/CDIM-design}{github.com/runphilrun/CDIM-design}}{}
+\headerwithlabel{Cosmic Dawn Intensity Mapper System-Level Design}{\small\href{https://github.com/runphilrun/CDIM-design/blob/master/cdim_design.pdf}{github.com/runphilrun/CDIM-design}}{}
 Contributed to a proposal for a Probe Class (\textasciitilde\$850M) NASA mission for a 1.5
 meter space telescope intended to observe near-infrared light from the early
 universe.
@@ -37,5 +46,38 @@ universe.
   \item Defined system-level design, generated representative CAD models and
     figures for the entire spacecraft.
 \end{itemize}
-  
+
+\section{Undergrad Capstone}
+\headerwithlabel{1 kW Arcjet Thruster}{\small\href{https://github.com/RIT-Space-Exploration/msd-P17101/blob/master/p17101.pdf}{github.com/RIT-Space-Exploration/msd-P17101}}{}
+Developed the concept, system-level design, and nozzle design for a small scale
+arcjet thruster demonstration. Worked in a multidisciplinary team of mechanical and electrical engineers.
+\begin{itemize}
+  \item Responsible for communication between the team and the customer (RIT Space Exploration).
+  \item Designed and performed CFD analysis on the thruster nozzle.
+\end{itemize}
+
+\section{Engineering Experience}
+\headerwithlabel{Lockheed Martin Space}{Sunnyvale, CA}{June 2017--Present}
+Electro-Optical Engineer, Optical Payload Center of Excellence
+\begin{itemize}
+  \item Planned and conducted experiments and analysis to characterize focal plane arrays.
+  \item Led a software team through critical development milestones for a Matlab engineering tool. 
+  \item Led a team to win a company-wide machine learning hackathon with Python and sci-kit learn.
+\end{itemize} 
+\headerwithlabel{SpaceX}{Hawthorne, CA}{June--August 2016}
+Vehicle Engineering Intern, Capsule Structures
+
+\headerwithlabel{RIT Center for Detectors}{Rochester, NY}{March--May 2016}
+Lab Assistant, Mechanical Engineer
+
+\headerwithlabel{SpaceX}{Hawthorne, CA}{January--July 2015}
+Vehicle Engineering Intern, Capsule Reusability
+
+\headerwithlabel{GE Aviation}{Cincinnati, OH}{January--May 2014}
+Engineering Co-op, Ultrasonic Non-Destructive Test Lab
+
+\section{Additional Experience}
+\headerwithlabel{RIT Undergraduate Admissions}{Rochester, NY}{Fall 2013--May 2017}
+
+
 \end{document}

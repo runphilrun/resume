@@ -42,9 +42,12 @@
 % format
 % ------
 
+% PAGE LAYOUT
+\setlength\parindent{0em}
+
 % TITLE BLOCK SPECIAL
 \newcommand{\name}[1]{
-  \LARGE{#1}
+  \bf\Large{#1}
 }
 
 % SECTION HEADERS
