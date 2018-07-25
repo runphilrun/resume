@@ -1,13 +1,15 @@
 %% RESUME - Philip Linden
 \documentclass{resume}
+\newcolumntype{Y}{>{\centering\arraybackslash}X} % centered and autosized cells in table
 \begin{document}
 
-\begin{tabular*}{\textwidth}{rlcr}
-  \faGlobe & \href{https://runphilrun.github.io/}{runphilrun.github.io} & & pjl7651@rit.edu \\
-  \faLinkedin & \href{https://www.linkedin.com/in/philiplinden/}{philiplinden} & \name{Philip J. Linden} & 440 N Winchester Blvd. Apt 128 \\
-  \faAngellist & \href{https://angel.co/philip-linden}{philip-linden} & & Santa Clara, CA 95050 \\
-  \faGithub & \href{https://github.com/runphilrun/}{runphilrun} & & (585) 690-7067 \\ 
-\end{tabular*}
+\begin{tabularx}{\textwidth}{@{}llYr@{}}
+\faGlobe & \href{https://runphilrun.github.io/}{runphilrun.github.io} & & pjl7651@rit.edu \\
+\faLinkedin & \href{https://www.linkedin.com/in/philiplinden/}{philiplinden} &
+\name{Philip J. Linden} & 440 N Winchester Blvd. Apt 128 \\
+\faAngellist & \href{https://angel.co/philip-linden}{philip-linden} & & Santa Clara, CA 95050 \\
+\faGithub & \href{https://github.com/runphilrun/}{runphilrun} & & (585) 690-7067 \\ 
+\end{tabularx}
 
 \section{Professional Summary}
 I am a recent graduate who is passionate about the design and analysis of
@@ -25,8 +27,8 @@ Master of Engineering in Mechanical Engineering (Dual Degree) & {\bf GPA: } 3.3 
 \end{tabular}
 
 \section{Graduate Paper}
-\subsection{Cosmic Dawn Intensity Mapper (CDIM) System-Level Design}
-Contributed to a proposal for a Probe Class (~\$850M) NASA mission for a 1.5
+\headerwithlabel{Cosmic Dawn Intensity Mapper System-Level Design}{\small\href{https://github.com/runphilrun/CDIM-design}{github.com/runphilrun/CDIM-design}}{}
+Contributed to a proposal for a Probe Class (\textasciitilde\$850M) NASA mission for a 1.5
 meter space telescope intended to observe near-infrared light from the early
 universe.
 \begin{itemize}

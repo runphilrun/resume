@@ -30,6 +30,8 @@
 \RequirePackage{titlesec} % customize header styles
 \RequirePackage[margin=0.75in]{geometry} % page layout
 \RequirePackage[colorlinks=true,urlcolor=blue]{hyperref} % insert hyperlinks
+\RequirePackage{tabularx} % fancy tables
+\RequirePackage{enumitem} % fancy lists
 \RequirePackage{url}      % insert links
 \RequirePackage[T1]{fontenc} % T1 font encoding
 \RequirePackage{lmodern}  % use Latin Modern Sans Serif
@@ -42,13 +44,12 @@
 
 % TITLE BLOCK SPECIAL
 \newcommand{\name}[1]{
-  \centerline{\LARGE{#1}}
-  \vspace{0.5em}
+  \LARGE{#1}
 }
 
 % SECTION HEADERS
 \titleformat{\section} % modify the \section command
-{\Large\scshape\raggedright} % Make the \section headers Large (\Large),
+{\large\scshape\raggedright} % Make the \section headers Large (\Large),
                              % small capitals (\scshape) and left aligned (\raggedright)
 {}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
 {}                           % Can be used to insert code before the heading
@@ -62,3 +63,7 @@
 \newcommand{\headerwithlabel}[3]{% bold first item, italic second, right align third
   {\large{\bf #1}, {\it #2}\hfill #3} \\
 }
+
+% TABLES AND LISTS
+\setlist[itemize]{nosep} % kill vertical spacing
+\renewcommand{\labelitemi}{- }
