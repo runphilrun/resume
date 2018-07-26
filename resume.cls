@@ -47,6 +47,8 @@
 \pagestyle{fancy}
 \fancyhead{} % clear header
 \fancyfoot{} % clear footer
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
 
 % TITLE BLOCK
 % name
@@ -69,6 +71,8 @@
 \newcommand{\printrcontact}{\@rcontact}
 \rhead{\printrcontact}
 
+% FOOTER
+\rfoot{\thepage~of~\pageref{LastPage}}
 
 % SECTION HEADERS
 \titleformat{\section} % modify the \section command
