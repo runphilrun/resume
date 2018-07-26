@@ -35,7 +35,7 @@
 \RequirePackage[margin=0.75in]{geometry} % page layout
 \RequirePackage[colorlinks=true,urlcolor=blue]{hyperref} % insert hyperlinks
 \RequirePackage{fancyhdr} % fancy header and footer
-% \RequirePackage{lastpage} % reference number of pages in doc
+\RequirePackage{lastpage} % reference number of pages in doc
 \RequirePackage{enumitem} % fancy lists
 \RequirePackage{url}      % insert links
 \RequirePackage[T1]{fontenc} % T1 font encoding
@@ -78,7 +78,7 @@
 \rhead{\printrcontact}
 
 % FOOTER
-% \rfoot{\thepage~of~\pageref*{LastPage}}
+\cfoot{\thepage~of~\pageref*{LastPage}}
 
 % SECTION HEADERS
 \titleformat{\section} % modify the \section command
