@@ -4,20 +4,27 @@
 % --------
 % preamble
 % ========
-\usepackage{multirow}
-\newcolumntype{Y}{>{\centering\arraybackslash}X} % centered and autosized cells in table
+% \usepackage{multirow}
+% \newcolumntype{Y}{>{\centering\arraybackslash}X} % centered and autosized cells in table
 % --------
 
 \begin{document}
-
-{\small
-\begin{tabularx}{\linewidth}{@{}lYr@{}}
-  \faGlobe~\href{https://runphilrun.github.io/}{runphilrun.github.io} & & pjl7651@rit.edu \\
-  \faLinkedin~\href{https://www.linkedin.com/in/philiplinden/}{philiplinden} &
-  \multirow{2}{*}{\name{Philip J. Linden}} & 440 N Winchester Blvd. Apt 128 \\
-  \faAngellist~\href{https://angel.co/philip-linden}{philip-linden} & & Santa Clara, CA 95050 \\
-  \faGithub~\href{https://github.com/runphilrun/}{runphilrun} & & (585) 690-7067
-\end{tabularx}
+\name{PHILIP J. LINDEN}
+\lcontact{
+  \begin{tabular}{@{}ll@{}}
+    \faGlobe&\href{https://runphilrun.github.io/}{runphilrun.github.io} \\
+    \faLinkedin&\href{https://www.linkedin.com/in/philiplinden/}{philiplinden} \\
+    \faAngellist&\href{https://angel.co/philip-linden}{philip-linden} \\
+    \faGithub&\href{https://github.com/runphilrun/}{runphilrun}
+  \end{tabular}
+}
+\rcontact{
+  \begin{tabular}{@{}r@{}}
+    pjl7651@rit.edu \\
+    440 N. Winchester Blvd. Apt 128 \\
+    Santa Clara, CA 95050 \\
+    (585) 690-7067
+  \end{tabular}
 }
 
 \section{Professional Summary}
@@ -34,27 +41,6 @@ optomistic about the future of technology and humankind.
 Bachelor of Science in Mechanical Engineering -- Aerospace Option & {\bf GPA: } 3.5 \\
 Master of Engineering in Mechanical Engineering (Dual Degree) & {\bf GPA: } 3.3 \\
 \end{tabular}
-
-\section{Graduate Paper}
-\headerwithlabel{Cosmic Dawn Intensity Mapper System-Level Design}{\small\href{https://github.com/runphilrun/CDIM-design/blob/master/cdim_design.pdf}{github.com/runphilrun/CDIM-design}}{}
-Contributed to a proposal for a Probe Class (\textasciitilde\$850M) NASA mission for a 1.5
-meter space telescope intended to observe near-infrared light from the early
-universe.
-\begin{itemize}
-  \item Compiled financial, mass, and power budgets for the optics, instruments,
-    cryocooler \& spacecraft.
-  \item Defined system-level design, generated representative CAD models and
-    figures for the entire spacecraft.
-\end{itemize}
-
-\section{Undergrad Capstone}
-\headerwithlabel{1 kW Arcjet Thruster}{\small\href{https://github.com/RIT-Space-Exploration/msd-P17101/blob/master/p17101.pdf}{github.com/RIT-Space-Exploration/msd-P17101}}{}
-Developed the concept, system-level design, and nozzle design for a small scale
-arcjet thruster demonstration. Worked in a multidisciplinary team of mechanical and electrical engineers.
-\begin{itemize}
-  \item Responsible for communication between the team and the customer (RIT Space Exploration).
-  \item Designed and performed CFD analysis on the thruster nozzle.
-\end{itemize}
 
 \section{Engineering Experience}
 \headerwithlabel{Lockheed Martin Space}{Sunnyvale, CA}{June 2017--Present}
@@ -76,8 +62,28 @@ Vehicle Engineering Intern, Capsule Reusability
 \headerwithlabel{GE Aviation}{Cincinnati, OH}{January--May 2014}
 Engineering Co-op, Ultrasonic Non-Destructive Test Lab
 
-\section{Additional Experience}
-\headerwithlabel{RIT Undergraduate Admissions}{Rochester, NY}{Fall 2013--May 2017}
+% \section{Additional Experience}
+% \headerwithlabel{RIT Undergraduate Admissions}{Rochester, NY}{Fall 2013--May 2017}
+
+\section{Projects}
+\headerwithlabel{Cosmic Dawn Intensity Mapper System-Level Design}{\small\href{https://github.com/runphilrun/CDIM-design/blob/master/cdim_design.pdf}{github.com/runphilrun/CDIM-design}}{}
+Contributed to a proposal for a Probe Class (\textasciitilde\$850M) NASA mission for a 1.5
+meter space telescope intended to observe near-infrared light from the early
+universe.
+\begin{itemize}
+  \item Compiled financial, mass, and power budgets for the optics, instruments,
+    cryocooler \& spacecraft.
+  \item Defined system-level design, generated representative CAD models and
+    figures for the entire spacecraft.
+\end{itemize}
+
+\headerwithlabel{1 kW Arcjet Thruster}{\small\href{https://github.com/RIT-Space-Exploration/msd-P17101/blob/master/p17101.pdf}{github.com/RIT-Space-Exploration/msd-P17101}}{}
+Developed the concept, system-level design, and nozzle design for a small scale
+arcjet thruster demonstration. Worked in a multidisciplinary team of mechanical and electrical engineers.
+\begin{itemize}
+  \item Responsible for communication between the team and the customer (RIT Space Exploration).
+  \item Designed and performed CFD analysis on the thruster nozzle.
+\end{itemize}
 
 
 \end{document}

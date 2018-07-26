@@ -30,7 +30,7 @@
 \RequirePackage{titlesec} % customize header styles
 \RequirePackage[margin=0.75in]{geometry} % page layout
 \RequirePackage[colorlinks=true,urlcolor=blue]{hyperref} % insert hyperlinks
-\RequirePackage{tabularx} % fancy tables
+\RequirePackage{fancyhdr} % fancy header and footer
 \RequirePackage{enumitem} % fancy lists
 \RequirePackage{url}      % insert links
 \RequirePackage[T1]{fontenc} % T1 font encoding
@@ -44,11 +44,31 @@
 
 % PAGE LAYOUT
 \setlength\parindent{0em}
+\pagestyle{fancy}
+\fancyhead{} % clear header
+\fancyfoot{} % clear footer
 
-% TITLE BLOCK SPECIAL
-\newcommand{\name}[1]{
-  \bf\Large{#1}
+% TITLE BLOCK
+% name
+\def\name#1{\def\@name{#1}}
+\name{% default name
+  Your Name Here 
 }
+\newcommand{\printname}{\@name}
+\chead{\bf\Large{\printname}}
+% left contact block
+\def\lcontact#1{\def\@lcontact{#1}}
+\lcontact{% default left contact block
+}
+\newcommand{\printlcontact}{\@lcontact}
+\lhead{\printlcontact}
+% right contact block
+\def\rcontact#1{\def\@rcontact{#1}}
+\rcontact{% default right contact block
+}
+\newcommand{\printrcontact}{\@rcontact}
+\rhead{\printrcontact}
+
 
 % SECTION HEADERS
 \titleformat{\section} % modify the \section command
