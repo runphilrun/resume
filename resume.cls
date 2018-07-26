@@ -23,7 +23,7 @@
 \DeclareOption{sans}{\AtBeginDocument{\renewcommand{\familydefault}{\sfdefault}}}
 \DeclareOption{roman}{\AtBeginDocument{\renewcommand{\familydefault}{\rmdefault}}}
 
-\ExecuteOptions{letterpaper,10pt,oneside,final} % execute default options
+\ExecuteOptions{letterpaper,10pt,final} % execute default options
 \ProcessOptions\relax
 \LoadClass{article}
 % -------
@@ -48,15 +48,13 @@
 % ------
 
 % PAGE LAYOUT
-\setlength\parindent{0em}
 \pagestyle{fancy}
-\fancyhead{} % clear header
-\fancyfoot{} % clear footer
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
+\setlength\parindent{0em}
 \renewcommand{\familydefault}{\sfdefault}
 
-% TITLE BLOCK
+% HEADER
+\fancyhead{} % clear header
+\renewcommand{\headrulewidth}{0pt}
 % name
 \def\name#1{\def\@name{#1}}
 \name{% default name
@@ -78,26 +76,22 @@
 \rhead{\printrcontact}
 
 % FOOTER
+\fancyfoot{} % clear footer
+\renewcommand{\footrulewidth}{0pt}
 \cfoot{\thepage~of~\pageref*{LastPage}}
 
 % SECTION HEADERS
 \titleformat{\section} % modify the \section command
-{\Large\raggedright} % Make the \section headers Large (\Large),
-                             % small capitals (\scshape) and left aligned (\raggedright)
-{}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
-{}                           % Can be used to insert code before the heading
-[\titlerule]                 % Inserts a horizontal line after the headingshape}
-\titlespacing*{\section}{0pt}{.5em}{.5em}
+  {\large\raggedright}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{0.2em}{0.3em}
 
 \titleformat{\subsection} % modify the \subsection command
-{\large\bf\raggedright}
-{}{0em}
-{}
+  {\large\bf\raggedright}{}{0em}{}
 
 \newcommand{\headerwithlabel}[3]{% bold first item, italic second, right align third
-  \vspace{0.5em}{\large{\bf #1}, {\it #2}\hfill #3} \\
+  \vspace{0.3em}{{\bf #1}~{\it\normalsize #2}\hfill {\normalsize#3}} \\
 }
 
 % TABLES AND LISTS
 \setlist[itemize]{nosep} % kill vertical spacing
-\renewcommand{\labelitemi}{- }
+\renewcommand{\labelitemi}{-~}
