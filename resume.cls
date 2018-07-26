@@ -19,7 +19,11 @@
 \DeclareOption*{% inherit options of article
   \PassOptionsToClass{\CurrentOption}{article}%
 }
-\ExecuteOptions{letterpaper,10pt,oneside,final}
+% font type options
+\DeclareOption{sans}{\AtBeginDocument{\renewcommand{\familydefault}{\sfdefault}}}
+\DeclareOption{roman}{\AtBeginDocument{\renewcommand{\familydefault}{\rmdefault}}}
+
+\ExecuteOptions{letterpaper,10pt,oneside,final} % execute default options
 \ProcessOptions\relax
 \LoadClass{article}
 % -------
@@ -31,6 +35,7 @@
 \RequirePackage[margin=0.75in]{geometry} % page layout
 \RequirePackage[colorlinks=true,urlcolor=blue]{hyperref} % insert hyperlinks
 \RequirePackage{fancyhdr} % fancy header and footer
+% \RequirePackage{lastpage} % reference number of pages in doc
 \RequirePackage{enumitem} % fancy lists
 \RequirePackage{url}      % insert links
 \RequirePackage[T1]{fontenc} % T1 font encoding
@@ -49,6 +54,7 @@
 \fancyfoot{} % clear footer
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
+\renewcommand{\familydefault}{\sfdefault}
 
 % TITLE BLOCK
 % name
@@ -72,15 +78,16 @@
 \rhead{\printrcontact}
 
 % FOOTER
-\rfoot{\thepage~of~\pageref{LastPage}}
+% \rfoot{\thepage~of~\pageref*{LastPage}}
 
 % SECTION HEADERS
 \titleformat{\section} % modify the \section command
-{\large\scshape\raggedright} % Make the \section headers Large (\Large),
+{\Large\raggedright} % Make the \section headers Large (\Large),
                              % small capitals (\scshape) and left aligned (\raggedright)
 {}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
 {}                           % Can be used to insert code before the heading
 [\titlerule]                 % Inserts a horizontal line after the headingshape}
+\titlespacing*{\section}{0pt}{.5em}{.5em}
 
 \titleformat{\subsection} % modify the \subsection command
 {\large\bf\raggedright}
@@ -88,7 +95,7 @@
 {}
 
 \newcommand{\headerwithlabel}[3]{% bold first item, italic second, right align third
-  {\large{\bf #1}, {\it #2}\hfill #3} \\
+  \vspace{0.5em}{\large{\bf #1}, {\it #2}\hfill #3} \\
 }
 
 % TABLES AND LISTS
