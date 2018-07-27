@@ -83,7 +83,7 @@
 % SECTION HEADERS
 \titleformat{\section} % modify the \section command
   {\large\raggedright}{}{0em}{}[\titlerule]
-\titlespacing*{\section}{0pt}{0.2em}{0.3em}
+\titlespacing*{\section}{0pt}{0.5em}{0.3em}
 
 \titleformat{\subsection} % modify the \subsection command
   {\large\bf\raggedright}{}{0em}{}
