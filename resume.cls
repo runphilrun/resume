@@ -78,7 +78,7 @@
 % FOOTER
 \fancyfoot{} % clear footer
 \renewcommand{\footrulewidth}{0pt}
-\cfoot{\thepage~of~\pageref*{LastPage}}
+% \cfoot{\thepage~of~\pageref*{LastPage}}
 
 % SECTION HEADERS
 \titleformat{\section} % modify the \section command
