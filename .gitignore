@@ -65,3 +65,7 @@ uu
 pythontex-files-*/
 #todonotes
 *.tdo
+
+# vs code
+.vscode/*
+*.code-workspace
